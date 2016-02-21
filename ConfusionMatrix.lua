@@ -2,7 +2,7 @@
 
 Example:
 
-    conf = optim.ConfusionMatrix( {'cat','dog','person'} )   -- new matrix
+    conf = optim.ConfusionMatrix( 3, {'cat','dog','person'} )-- new matrix, 3 classes
     conf:zero()                                              -- reset matrix
     for i = 1,N do
         conf:add( neuralnet:forward(sample), label )         -- accumulate errors
